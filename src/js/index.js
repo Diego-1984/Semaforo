@@ -4,10 +4,10 @@ import ReactDOM from "react-dom";
 
 // include your styles into the webpack bundle
 import "../styles/index.css";
-import Luz1 from "./component/semaforo.jsx";
 
 //import your own components
-import Semaforo from "./component/semaforo.jsx";
+
+import Home from "./component/home.jsx";
 
 //render your react application
-ReactDOM.render(<Luz1 />, document.querySelector("#app"));
+ReactDOM.render(<Home/>, document.querySelector("#app"));
