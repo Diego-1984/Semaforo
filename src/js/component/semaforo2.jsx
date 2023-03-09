@@ -1,9 +1,9 @@
 import React, { useState} from 'react';
 
-const Semaforo =()=>  {
-  const [verde, setVerde] = useState("🟢");
-  const [negro, setNegro] =useState("⚫");
- 
+const Semaforo2 =()=>  {
+  const [negro, setNegro] = useState("🟡");
+  const [amarillo, setAmarillo] =useState("⚫");
+  
   
 
   useState(() => {
@@ -11,18 +11,18 @@ const Semaforo =()=>  {
       if (verde === 1) {
         setNegro();
       } else {
-        setVerde("⚫",);
+        setAmarillo("🟡",);
       } 
-    }, 2000);
+    }, 4000);
      
     
   },);
 
   return (
     <div>
-      <h1>{verde}</h1>
+      <h1>{amarillo}</h1>
     </div>
   );
 }
 
-export default Semaforo;
+export default Semaforo2;
